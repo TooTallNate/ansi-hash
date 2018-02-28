@@ -6,7 +6,7 @@ function log(v) {
   console.log(chalk.ansi256(color)(v), color);
 }
 
-for (let i = 'a'; i < 'z'; i = String.fromCharCode(i.charCodeAt(0) + 1)) {
+for (let i = 'a'; i <= 'z'; i = String.fromCharCode(i.charCodeAt(0) + 1)) {
   log(i);
 }
 log('test');
